@@ -5,185 +5,296 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HomePage</title>
     <link rel="stylesheet" href="css/homepage.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/socialmedia.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/socialmedia.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
-    
     <div class="main-container">
-      
+      <div class="page-wrapper">
+        <div class="nav-wrapper">
+          <div class="grad-bar"></div>
+          <nav class="navbar">
+            <a href="index.html"
+              ><img src="images/miloplelogo.png" alt="Company Logo"
+            /></a>
+            <div class="menu-toggle" id="mobile-menu">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+            <ul class="nav no-search">
+              <li class="nav-item">
+                <a href="https://www.milople.com/about.html" target="_blank"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item"><a href="#">Milople Services</a></li>
+              <li class="nav-item">
+                <a href="magento2extensions.html">Magento2 Extensions</a>
+              </li>
+              <li class="nav-item">
+                <a href="magento1extenions.html">Magento1 Extensions</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.milople.com/contacts" target="_blank"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
       <div class="banner">
         <img src="images/Banner1.png" alt="" srcset="" />
       </div>
       <div class="container">
+        <div class="service-description">
+          <div class="servies-heading">
+            <h1>Magento Development Services</h1>
+          </div>
 
-      
-      <div class="service-description">
-        <div class="servies-heading">
-          <h1>Magento Development Services</h1>
+          <div class="magentto-services">
+            <div class="card-container">
+              <div class="card">
+                <img src="images/services/Prestashop1.png" alt="" />
+              </div>
+              <div class="container">
+                <div class="services-names">
+                  <h4>Prestashop Service</h4>
+                </div>
+                <button class="btn-learn-more">
+                  <a href="#" target="_blank">Learn More</a>
+                </button>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <img src="images/services/SEOservice1.png" alt="" />
+              </div>
+              <div class="container">
+                <div class="services-names">
+                  <h4>Seo Servies</h4>
+                </div>
+                <button class="btn-learn-more">
+                  <a href="#" target="_blank">Learn More</a>
+                </button>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <img
+                  src="images/services/Websitespeedoptimization1.png"
+                  alt=""
+                />
+              </div>
+              <div class="container">
+                <div class="services-names">
+                  <h4>Website Speed Optimization</h4>
+                </div>
+                <button class="btn-learn-more">
+                  <a href="#" target="_blank">Learn More</a>
+                </button>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <img src="images/services/Wordpress1.png" alt="" />
+              </div>
+              <div class="container">
+                <div class="services-names">
+                  <h4>Wordpress Service</h4>
+                </div>
+                <button class="btn-learn-more">
+                  <a href="#" target="_blank">Learn More</a>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- Magento 2 -->
+        <div class="service-description">
+          <div class="servies-heading magento2">
+            <h1>Magento 2 Extensions</h1>
+          </div>
 
-        <div class="magentto-services">
-          <div class="card-container">
-            <div class="card">
-              <img src="images/services/Prestashop1.png" alt="" />
+          <div class="magentto-services">
+            <div class="card-container">
+              <div class="card">
+                <img src="images/magento2/auction.png" alt="" />
+              </div>
+              <div class="container">
+                <div class="services-names">
+                  <h4>Magento2 Auction</h4>
+                </div>
+                <button class="btn-learn-more">
+                  <a href="#" target="_blank">Learn More</a>
+                </button>
+              </div>
             </div>
-            <div class="container">
-              <button class="btn-learn-more">Learn More</button>
+            <div class="card-container">
+              <div class="card">
+                <img src="images/magento2/personalized.png" alt="" />
+              </div>
+              <div class="container">
+                <div class="services-names">
+                  <h4>Magento2 Personalized</h4>
+                </div>
+                <button class="btn-learn-more">
+                  <a href="#" target="_blank">Learn More</a>
+                </button>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <img src="images/magento2/product-label.png " alt="" />
+              </div>
+              <div class="container">
+                <div class="services-names">
+                  <h4>Magento2 Product Label</h4>
+                </div>
+                <button class="btn-learn-more">
+                  <a href="#" target="_blank">Learn More</a>
+                </button>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <img src="images/magento2/geoip.png" alt="" />
+              </div>
+              <div class="container">
+                <div class="services-names">
+                  <h4>Magento2 GeoIp</h4>
+                </div>
+                <button class="btn-learn-more">
+                  <a href="#" target="_blank">Learn More</a>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="card-container">
-            <div class="card">
-              <img src="images/services/SEOservice1.png" alt="" />
+
+          <div class="btn">
+            <button id="view-more-btn">
+              <a href="magento2extensions.html" target="_blank">
+                View More Magento 2 Extensions</a
+              >
+            </button>
+          </div>
+        </div>
+        <!-- magento 1 -->
+        <div class="service-description">
+          <div class="servies-heading magento2">
+            <h1>Magento 1 Extensions</h1>
+          </div>
+
+          <div class="magentto-services">
+            <div class="card-container">
+              <div class="card">
+                <img src="images/magento1/custom-price.png" alt="" />
+              </div>
+              <div class="container">
+                <div class="services-names">
+                  <h4>Magento1 Custom Price</h4>
+                </div>
+                <button class="btn-learn-more">
+                  <a href="#" target="_blank">Learn More</a>
+                </button>
+              </div>
             </div>
-            <div class="container">
-              <button class="btn-learn-more">Learn More</button>
+            <div class="card-container">
+              <div class="card">
+                <img src="images/magento1/deposite-payment.png" alt="" />
+              </div>
+              <div class="container">
+                <div class="services-names">
+                  <h4>Magento1 Deposite Payment</h4>
+                </div>
+                <button class="btn-learn-more">
+                  <a href="#" target="_blank">Learn More</a>
+                </button>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <img src="images/magento1/magento-partial-payment.png" alt="" />
+              </div>
+              <div class="container">
+                <div class="services-names">
+                  <h4>Magento1 Partial Payment</h4>
+                </div>
+                <button class="btn-learn-more">
+                  <a href="#" target="_blank">Learn More</a>
+                </button>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <img src="images/magento1/magento-recurring.png" alt="" />
+              </div>
+              <div class="container">
+                <div class="services-names">
+                  <h4>Magento1 subscription & Recurring Payment</h4>
+                </div>
+                <button class="btn-learn-more">
+                  <a href="#" target="_blank">Learn More</a>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="card-container">
-            <div class="card">
-              <img src="images/services/Websitespeedoptimization1.png" alt="" />
-            </div>
-            <div class="container">
-              <button class="btn-learn-more">Learn More</button>
-            </div>
-          </div>
-          <div class="card-container">
-            <div class="card">
-              <img src="images/services/Wordpress1.png" alt="" />
-            </div>
-            <div class="container">
-              <button class="btn-learn-more">Learn More</button>
-            </div>
+          <div class="btn">
+            <button id="view-more-btn">
+              <a href="magento1extenions.html" target="_blank"
+                >View More Magento 1 Extensions</a
+              >
+            </button>
           </div>
         </div>
       </div>
-      <!-- Magento 2 -->
-      <div class="service-description">
-        <div class="servies-heading magento2">
-          <h1>Magento 2 Extensions</h1>
-        </div>
-
-        <div class="magentto-services">
-          <div class="card-container">
-            <div class="card">
-              <img src="images/magento2/auction.png" alt="" />
-            </div>
-            <div class="container">
-              <button class="btn-learn-more">Learn More</button>
-            </div>
-          </div>
-          <div class="card-container">
-            <div class="card">
-              <img src="images/magento2/personalized.png" alt="" />
-            </div>
-            <div class="container">
-              <button class="btn-learn-more">Learn More</button>
-            </div>
-          </div>
-          <div class="card-container">
-            <div class="card">
-              <img src="images/magento2/product-label.png " alt="" />
-            </div>
-            <div class="container">
-              <button class="btn-learn-more">Learn More</button>
-            </div>
-          </div>
-          <div class="card-container">
-            <div class="card">
-              <img src="images/magento2/geoip.png" alt="" />
-            </div>
-            <div class="container">
-              <button class="btn-learn-more">Learn More</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="btn">
-          <button id="view-more-btn">View More Magento 2 Extensions</button>
-        </div>
-      </div>
-      <!-- magento 1 -->
-      <div class="service-description">
-        <div class="servies-heading magento2">
-          <h1>Magento 1 Extensions</h1>
-        </div>
-
-        <div class="magentto-services">
-          <div class="card-container">
-            <div class="card">
-              <img src="images/magento1/custom-price.png" alt="" />
-            </div>
-            <div class="container">
-              <button class="btn-learn-more">Learn More</button>
-            </div>
-          </div>
-          <div class="card-container">
-            <div class="card">
-              <img src="images/magento1/deposite-payment.png" alt="" />
-            </div>
-            <div class="container">
-              <button class="btn-learn-more">Learn More</button>
-            </div>
-          </div>
-          <div class="card-container">
-            <div class="card">
-              <img src="images/magento1/magento-partial-payment.png" alt="" />
-            </div>
-            <div class="container">
-              <button class="btn-learn-more">Learn More</button>
-            </div>
-          </div>
-          <div class="card-container">
-            <div class="card">
-              <img src="images/magento1/magento-recurring.png" alt="" />
-            </div>
-            <div class="container">
-              <button class="btn-learn-more">Learn More</button>
-            </div>
-          </div>
-        </div>
-        <div class="btn">
-          <button id="view-more-btn">View More Magento 1 Extensions</button>
-        </div>
-      </div>
-    </div>
       <!-- social media icon -->
       <section class="trial-block shadow3" id="ContactUs">
         <div class="height450">
-          
-          <div class="social-overlap process-scetion ">
+          <div class="social-overlap process-scetion">
             <div class="container">
               <div class="row justify-content-center">
                 <div class="col-md-10">
                   <div class="social-bar">
                     <div class="social-icons mb-3 iconpad text-center">
-                      <a class="slider-nav-item"
+                      <a
+                        class="slider-nav-item"
+                        href="https://www.facebook.com/Milople"
                         ><i class="fab fa-facebook"></i
                       ></a>
-    
-                      <a class="slider-nav-item"
+
+                      <a
+                        class="slider-nav-item"
+                        href="https://twitter.com/milople"
                         ><i class="fab fa-twitter"></i
                       ></a>
                       <a
-                        href="https://www.youtube.com/watch?v=_XiOcsj3oNI&t=50s"
+                        href="https://www.instagram.com/milople/?hl=en"
                         target="_blank"
                         class="slider-nav-item"
                         ><i class="fab fa-instagram"></i
                       ></a>
                       <a
-                        href="https://www.youtube.com/watch?v=_XiOcsj3oNI&t=50s"
+                        href="https://www.linkedin.com/company/9319717/admin/"
                         target="_blank"
                         class="slider-nav-item"
-                        ><i class="fa-brands fa-linkedin"></i></a>
-                     
-                     
-                      <a href="#" class="slider-nav-item"
-                        ><i class="fab fa-youtube"></i
+                        ><i class="fa-brands fa-linkedin"></i
                       ></a>
-                     
-                     
                     </div>
                   </div>
                 </div>
@@ -193,5 +304,6 @@
         </div>
       </section>
     </div>
+    <script src="js/navbar.js"></script>
   </body>
 </html>

@@ -24,19 +24,26 @@
 }
 .magentto-services{
     margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
 }
 
-.card {
+.card-container .card {
 	/* width: 250px; */
 	margin-top: 20px;
 	background: #FFFFFF;
 	box-shadow: 1px 1px 12px 1px #00000040;
 	padding: 4px;
-	border-radius: 20px;
+	border-radius: 15px;
+    flex-direction: initial;
+
 }
 .card img {
 	margin: 4px;
-	border-radius: 20px;
+	border-radius: 15px;
+    height: auto;
+    width: 100%;
 	
 }
 
@@ -51,6 +58,13 @@
     display: flex;
     justify-content: space-evenly;
 }
+.services-names h4{
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #000;
+  width: 233px;
+  min-height: 45px;
+}
 
 .btn-learn-more {
 	border-radius: 15px;
@@ -60,6 +74,18 @@
 	height: 40px;
 	font-size: 20px;
 	
+}
+.btn-learn-more:hover {
+	background: #fe791a;
+}
+.btn-learn-more a:hover {
+	color: #fff;
+	
+}
+#view-more-btn a {
+	text-decoration: none !important;
+	color: #fff;
+	transition: all 0.3s ease 0s;
 }
 .btn{
     text-align: center;
@@ -195,6 +221,212 @@ a {
 
 
 
-/*socil*/
+/*navbar*/
+.page-wrapper {
+  width: 100%;
+  height: auto;
+}
 
-  /*  */
+.nav-wrapper {
+  width: 100%;
+ 
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  z-index: 9;
+}
+
+.grad-bar {
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  	-webkit-animation: gradbar 15s ease infinite;
+	-moz-animation: gradbar 15s ease infinite;
+	animation: gradbar 15s ease infinite;
+}
+
+/* NAVIGATION */
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  height: 50px;
+  overflow: hidden;
+}
+
+.navbar img {
+  height: 35px;
+  width: auto;
+  justify-self: start;
+  margin-left: 20px;
+}
+
+
+.nav-item {
+	margin: 0 30px;
+}
+
+.nav-item a {
+  color: #000;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.3s ease-out;
+}
+
+.nav-item a:hover {
+  color: #fe791a;
+}
+
+/* SECTIONS */
+
+.headline {
+  width: 100%;
+  height: 50vh;
+  min-height: 350px;
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1435224668334-0f82ec57b605?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+
+
+/* SEARCH FUNCTION */
+
+
+
+
+
+
+
+/* MOBILE MENU & ANIMATION */
+
+.menu-toggle .bar{
+  width: 25px;
+  height: 3px;
+  background-color: #3f3f3f;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle {
+  justify-self: end;
+  margin-right: 25px;
+  display: none;
+}
+
+.menu-toggle:hover{
+  cursor: pointer;
+}
+
+#mobile-menu.is-active .bar:nth-child(2){
+  opacity: 0;
+}
+
+#mobile-menu.is-active .bar:nth-child(1){
+  -webkit-transform: translateY(8px) rotate(45deg);
+  -ms-transform: translateY(8px) rotate(45deg);
+  -o-transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
+}
+
+#mobile-menu.is-active .bar:nth-child(3){
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+  -ms-transform: translateY(-8px) rotate(-45deg);
+  -o-transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* KEYFRAME ANIMATIONS */
+
+@-webkit-keyframes gradbar {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes gradbar {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes gradbar {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+/* Media Queries */
+
+  /* Mobile Devices - Phones/Tablets */
+
+@media only screen and (max-width: 1024px) { 
+ 
+  
+  /* MOBILE NAVIGATION */
+     
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: start;
+    top: 55px;
+    background-color: #fff;
+    width: 100%;
+    height: calc(100vh - 55px);
+    transform: translate(-101%);
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .navbar li {
+    padding: 15px;
+  }
+  
+  .navbar li:first-child {
+    margin-top: 50px;
+  }
+  
+  .navbar li a {
+    font-size: 1rem;
+  }
+   
+  .menu-toggle, .bar {
+    display: block;
+    cursor: pointer;
+  }
+  
+  .mobile-nav {
+  transform: translate(0%)!important;
+}
+  
+  
+}
+/*---Navbar---*/
