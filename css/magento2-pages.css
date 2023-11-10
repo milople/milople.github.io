@@ -6,5 +6,8 @@
 .description-magento2 .main-heading {
 	text-align: center;
 	font-size: 30px;
-	margin-top: 16px;
+	margin: 50px;
+}
+.container .desctiption-part{
+	text-align: left;
 }
